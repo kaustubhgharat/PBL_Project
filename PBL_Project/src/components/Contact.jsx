@@ -19,11 +19,11 @@ const Contact = () => {
             </div>
             <div className='mb-4'>
                 <FaPhone className='inline-block text-green-400 mr-2'></FaPhone>
-                <span>+9828839</span>
+                <span>+91-7066121972</span>
             </div>
             <div className='mb-4'>
                 <FaMapMarkedAlt className='inline-block text-green-400 mr-2'></FaMapMarkedAlt>
-                <span>sreet, city, pronice, country</span>
+                <span>Address. Survey No. 27, Near Trimurti Chowk, Dhankawadi, Pune-411043, Maharashtra (India).</span>
             </div>
           </div>
           <div className='flex-1 w-full'>

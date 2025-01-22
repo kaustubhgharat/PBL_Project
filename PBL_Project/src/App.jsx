@@ -1,22 +1,13 @@
-
-import './App.css'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./home";
 
 function App() {
-
   return (
-    <div className='bg-black'>
-        <Navbar />
-        <Hero />
-        <About />
-        <Contact />
-        <Footer />
+    <div className="bg-black">
+      <Home/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
