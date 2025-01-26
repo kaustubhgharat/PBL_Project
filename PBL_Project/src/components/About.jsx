@@ -1,10 +1,42 @@
 import React from "react";
 import AboutImage from "../assets/aboutme-image.png";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="bg-black text-white py-20" id="about">
-      <div className="container mx-auto px-8 md:px-16 lg:px-24">
+    <div className="bg-black h-svh  text-white " id="about">
+      <nav className="bg-black  text-white  md:px-16 lg:px-24">
+              <div className="flex pt-3">
+                <div className="text-4xl pt-4 pr-32 font-bold hidden md:inline ">
+                  ClassHub
+                </div>
+      
+                <div className="space-x-10 p-6 pl-7">
+                  <Link to="/" className="hover:text-gray-400 text-lg">
+                    Home
+                  </Link>
+                  <Link to="/about" className="hover:text-gray-400 text-lg">
+                    About Me
+                  </Link>
+                  <Link to="/material" className="hover:text-gray-400 text-lg">
+                    Study Material
+                  </Link>
+                  <Link to="/lecture" className="hover:text-gray-400 text-lg">
+                    Lecture Video's
+                  </Link>
+                  <Link to="/assignment" className="hover:text-gray-400 text-lg">
+                    Assignment's
+                  </Link>
+                  <Link to="/tt" className="hover:text-gray-400 text-lg">
+                    My Time Table
+                  </Link>
+                  <Link to="/contact" className="hover:text-gray-400 text-lg">
+                    Contact
+                  </Link>
+                </div>
+              </div>
+            </nav>
+      <div className="container mx-auto py-20 px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
@@ -55,27 +87,33 @@ const About = () => {
               </div>
             </div>
             <div className="mt-12 flex justify-between text-center">
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        3+
-                    </h3>
-                    <p>Years Experience</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        50+
-                    </h3>
-                    <p>Projects Completed</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Happy Clients</p>
-                </div>
+              <div>
+                <h3
+                  className="text-2xl font-bold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500"
+                >
+                  3+
+                </h3>
+                <p>Years Experience</p>
+              </div>
+              <div>
+                <h3
+                  className="text-2xl font-bold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500"
+                >
+                  50+
+                </h3>
+                <p>Projects Completed</p>
+              </div>
+              <div>
+                <h3
+                  className="text-2xl font-bold text-transparent bg-clip-text 
+                bg-gradient-to-r from-green-400 to-blue-500"
+                >
+                  10+
+                </h3>
+                <p>Happy Clients</p>
+              </div>
             </div>
           </div>
         </div>
