@@ -1,107 +1,58 @@
 import React from "react";
-import AdminImg from "./assets/admin.png";
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Pictlogo from "./assets/pictlogo.jpg";
+import bg from "./assets/bg.jpg";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import AdminIMg from "./assets/adminimg.jpg"
 
 const Home = () => {
   return (
-    <div className="h-svh ">
-      <nav className="bg-black  text-white  md:px-16 lg:px-24">
-        <div className="flex pt-3">
-          <div className="text-4xl pt-4 pr-12 font-bold hidden md:inline ">
-            ClassHub
-          </div>
+    <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
+      <nav className="w-5/6 mx-auto flex justify-between items-center py-3 ">
+        <img src={Pictlogo} alt="Logo" className="w-20 cursor-pointer  " />
+        <ul className="flex space-x-8 text-lg pr-6">
+          <li><Link to="/about" className="hover:text-gray-400">ABOUT</Link></li>
+          <li><Link to="/publication" className="hover:text-gray-400">PUBLICATIONS</Link></li>
+          <li><Link to="/acm" className="hover:text-gray-400">ACM ACTIVITY</Link></li>
+          <li><Link to="/patents" className="hover:text-gray-400">PATENTS</Link></li>
+          <li><Link to="/sessions" className="hover:text-gray-400">SESSIONS</Link></li>
+          
 
-          <div className="space-x-10 p-6 ">
-            <Link to="/" className="hover:text-gray-400 text-lg">
-              Home
-            </Link>
-            <Link to="/about" className="hover:text-gray-400 text-lg">
-              About Me
-            </Link>
-            <Link to="/material" className="hover:text-gray-400 text-lg">
-              Study Material
-            </Link>
-            <Link to="/lecture" className="hover:text-gray-400 text-lg">
-              Lecture Video's
-            </Link>
-            <Link to="/assignment" className="hover:text-gray-400 text-lg">
-              Assignment's
-            </Link>
-            <Link to="/tt" className="hover:text-gray-400 text-lg">
-              My Time Table
-            </Link>
-            <Link to="/contact" className="hover:text-gray-400 text-lg">
-              Contact
-            </Link>
-            <button
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-            transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full"
-              >
-                Admin Login
-              </button>
-          </div>
-        </div>
+        </ul>
       </nav>
-      <div className="bg-black m-6 text-white text-center py-14">
-        <img
-          src={AdminImg}
-          alt=""
-          className="mx-auto mb-8 w-48 h-48 object-cover transform 
-    transition-transform duration-300 hover:scale-105"
-        />
-        <h1 className="text-4xl font-bold">
-          I'm{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
-            Pranali R. Navghare
-          </span>
-        </h1>
-        <p className="mt-4 text-xl text-gray-300">
-          Pranali Navghare is a cybersecurity professional with over five years
-          of experience in network security, ethical hacking,
-          <br /> and threat analysis. She holds an M.Tech in Information
-          Technology from NIT Raipur (2017)
-          <br />
-          and a B.E. in Computer Engineering from RTMNU Nagpur (2021).
-        </p>
+
+      <div className="ml-28 mt-16 pt-12">
+        <h1 className="text-6xl text-gray-800"><span className="text-orange-500">Dr</span>. <span className="text-orange-500">G</span>eetanjali <span className="text-orange-500">K</span>ale</h1>
+        <h3 className="text-lg leading-6 pt-6 text-gray-700">
+          Head & Associate Professor, Dept. of Computer Engineering, PICT, <br />
+          Secretary, ACM India Woman, Senior Member ACM, Senior Member<br />
+          IEEE, Chair ACMW Pune Professional Chap., Former BoS CE SPPU,<br />
+          Core member of AnitaB.org
+        </h3>
       </div>
-      <footer className="bg-black text-white ">
-        <div className="container mx-auto px-8 md:px-16 lg:px-24">
-          <div
-            className="border-t border-gray-600 pt-4 flex flex-col md:flex-row 
-              justify-between items-center"
-          >
-            <p className="text-gray-400">
-              &copy; {new Date().getFullYear()} Pranali. All rights reserved.
-            </p>
-            <div className="flex space-x-4 my-4 md:my-0">
-              {/* <a href="#" className="text-gray-400 hover:text-white">
-                <FaFacebook />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <FaTwitter />
-              </a> */}
-              <a
-                href="https://www.linkedin.com/in/pranali-navghare-8340b1233/"
-                className="text-gray-400 hover:text-white"
-              >
-                <FaLinkedin />
-              </a>
-              {/* <a href="#" className="text-gray-400 hover:text-white">
-                <FaGithub />
-              </a> */}
-            </div>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                Privacy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                Terms of Service
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+
+      <div className="absolute right-24 bottom-2 w-1/3">
+        <img src={AdminIMg} alt="Ariana" className="w-full" />
+      </div>
+
+      <div className="flex space-x-6 ml-28 mt-8 pt-5">
+        <a href="#" className="text-4xl text-black hover:text-blue-500"
+        target="_blank" 
+        rel="noopener noreferrer"><FaFacebook /></a>
+        <a href="#" className="text-4xl text-black hover:text-blue-500"
+        target="_blank" 
+        rel="noopener noreferrer"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/dr-geetanjali-kale-17148922/" className="text-4xl text-black hover:text-blue-500"
+        target="_blank" 
+        rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="#" className="text-4xl text-black hover:text-blue-500"
+        target="_blank" 
+        rel="noopener noreferrer"><FaTwitter /></a>
+      </div>
+      <div className="flex space-x-6 ml-28 mt-8 ">
+        
+        <button className="bg-slate-900 text-white p-3  rounded-2xl"><Link to="/contact" className="hover:text-gray-400">CONTACT</Link></button>
+      </div>
     </div>
   );
 };

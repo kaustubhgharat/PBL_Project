@@ -6,8 +6,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-
-const About = () => {
+const Acm = () => {
   return (
     <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
       <nav className="w-5/6 mx-auto flex justify-between items-center py-3 ">
@@ -23,14 +22,14 @@ const About = () => {
         </ul>
       </nav>
       <div className="pl-9">
-        <button className="flex items-center space-x-2 p-2 bg-slate-800 text-white rounded-lg">
-          <Link to="/" className="hover:text-gray-400"><FontAwesomeIcon icon={faArrowLeft} /> Back</Link>
-        </button>
-      </div>
+              <button className="flex items-center space-x-2 p-2 bg-slate-800 text-white rounded-lg">
+                <Link to="/" className="hover:text-gray-400"><FontAwesomeIcon icon={faArrowLeft} /> Back</Link>
+              </button>
+            </div>
 
 
     </div>
   );
 };
 
-export default About;
+export default Acm;

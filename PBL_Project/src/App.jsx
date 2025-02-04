@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./home";
+import Home from "./Home"
 import About from "./components/About";
-import TT from "./components/TT";
-import Material from "./components/Material";
-import Assignment from "./components/Assignment";
-import Lecture from "./components/Lecture";
+import Publication from "./components/Publication";
+import Acm from "./components/Publication";
+import Patents from "./components/Acm";
+import Sessions from "./components/Session";
 import Contact from "./components/Contact";
+
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/material" element={<Material />} />
-        <Route path="/lecture" element={<Lecture />} />
-        <Route path="/assignment" element={<Assignment />} />
-        <Route path="/tt" element={<TT />} />
+        <Route path="/publication" element={<Publication />} />
+        <Route path="/acm" element={<Acm />} />
+        <Route path="/patents" element={<Patents />} />
+        <Route path="/sessions" element={<Sessions />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
