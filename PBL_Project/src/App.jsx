@@ -7,6 +7,8 @@ import Acm from "./components/Publication";
 import Patents from "./components/Acm";
 import Sessions from "./components/Session";
 import Contact from "./components/Contact";
+import '@fontsource/montserrat'; // Defaults to 400 weight
+import '@fontsource/montserrat/700.css'; // Bold weight
 
 
 function App() {
