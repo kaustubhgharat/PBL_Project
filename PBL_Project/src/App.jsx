@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home"
 import About from "./components/About";
 import Publication from "./components/Publication";
-import Acm from "./components/Publication";
-import Patents from "./components/Acm";
+import Acm from "./components/Acm";
+import Patents from "./components/Patents";
 import Sessions from "./components/Session";
 import Contact from "./components/Contact";
 import '@fontsource/montserrat'; // Defaults to 400 weight

@@ -48,6 +48,28 @@ const Session = () => {
           </ul>
         </div>
       )}
+      {/* Session Information */}
+      <div className="w-5/6 mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg h-4/6 overflow-y-auto">
+        <h2 className="text-2xl font-bold mb-4">Sessions & Expert Talks</h2>
+        <ul className="list-disc pl-5 space-y-2 text-lg">
+          <li>Worked as TPC Chair and Organizing Chair for ICEI-2022 International Conference</li>
+          <li>Worked as Organizing Co-chair for CTiS 2022, CTiS 2023, and CTiS 2024</li>
+          <li>Delivered an expert talk on “Visualising Data Science: Exploring the synergy with Computer Vision" in 5 days FDP on Data Science Applications in Real-World using Python at Indira College of Engineering, Pune (21 Mar. 2024)</li>
+          <li>Delivered an expert talk on “Data Analytics in Computer Vision" AICTE-ISTE sponsored refresher course on Research Methodology and Data Analysis at JSPM, RSCOE, Pune (16th Dec. 2020)</li>
+          <li>Delivered Talk as a Chief Guest at One Week Online FDP on Research Trends In Computer Engineering and Information Technology at STES's, Smt. Kashibai Navale College of Engineering, Pune (4th Jan. 2021)</li>
+          <li>Resource person for Faculty Development Program on “Computer Graphics and Gaming” conducted for SPPU faculty at AIT, Pune.</li>
+          <li>Resource person for Faculty Development Program on “Computer Graphics” (Theory and Lab) conducted for SPPU faculty at SIT, Pune.</li>
+          <li>Moderator for Panel discussion on “Curriculum design and content Delivery” at D. Y Patil College of Engineering, Akurdi.</li>
+          <li>Chief guest for “Cyber Security” workshop at Manjari College of Engineering.</li>
+          <li>Organized and guided session on “Android Application Development” at VMware for women from industry.</li>
+          <li>Volunteered for CSPathshala workshop at Gurukul School “Bringing computational thinking at school."</li>
+          <li>"Computer Graphics", one-day University-level workshop for Computer Engineering faculty members.</li>
+          <li>"Computer Graphics and Gaming Using QT", one-day University-level Workshop for Computer Engineering faculty members.</li>
+          <li>"Transformations, Animation, and Gaming", Expert lecture at APCOE, Pune.</li>
+          <li>Mission 10X learning approach (Bloom's Taxonomy, Gardner’s Theory, and sharing of experience) at Computer Department PICT, Pune (2009).</li>
+        </ul>
+      </div>
+
     </div>
   );
 };
