@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home"
 import About from "./components/About";
-import Publication from "./components/Publication";
-import Acm from "./components/Publication";
-import Patents from "./components/Acm";
+import Bookchapters from "./components/Bookchapters";
+import Conferencepublications from "./components/Conferencepublications";
+import Acm from "./components/Acm";
+import Patents from "./components/Patents";
 import Sessions from "./components/Session";
 import Contact from "./components/Contact";
 import '@fontsource/montserrat'; // Defaults to 400 weight
@@ -18,7 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/publication" element={<Publication />} />
+        <Route path="/Bookchapters" element={<Bookchapters />} />
+        <Route path="/Conferencepublications" element={<Conferencepublications />} />
         <Route path="/acm" element={<Acm />} />
         <Route path="/patents" element={<Patents />} />
         <Route path="/sessions" element={<Sessions />} />

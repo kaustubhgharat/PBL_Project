@@ -7,6 +7,7 @@ import { FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "re
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <div className="w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bg})` }}>
@@ -18,7 +19,14 @@ const Home = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-4 lg:space-x-8 text-lg pr-6">
           <li><Link to="/about" className="hover:text-gray-400">ABOUT</Link></li>
-          <li><Link to="/publication" className="hover:text-gray-400">PUBLICATIONS</Link></li>
+          <li className="relative group">
+            <button className="hover:text-gray-400">PUBLICATIONS ▾</button>
+            <ul className="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <li><Link to="/journal-publications" className="block px-2 py-2 hover:bg-gray-200">Journal Papers</Link></li>
+              <li><Link to="/Conferencepublications" className="block px-2 py-2 hover:bg-gray-200">Conference Papers</Link></li>
+              <li><Link to="/Bookchapters" className="block px-2 py-2 hover:bg-gray-200">Book Chapters</Link></li>
+            </ul>
+          </li>
           <li><Link to="/acm" className="hover:text-gray-400">ACM ACTIVITY</Link></li>
           <li><Link to="/patents" className="hover:text-gray-400">PATENTS</Link></li>
           <li><Link to="/sessions" className="hover:text-gray-400">SESSIONS</Link></li>
