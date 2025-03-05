@@ -43,7 +43,14 @@ const Home = () => {
         <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 z-10">
           <ul className="text-center space-y-4 text-lg">
             <li><Link to="/about" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>ABOUT</Link></li>
-            <li><Link to="/publication" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>PUBLICATIONS</Link></li>
+            <li className="relative group">
+            <button className="hover:text-gray-400">PUBLICATIONS ▾</button>
+            <ul className="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <li><Link to="/journal-publications" className="block px-2 py-2 hover:bg-gray-200">Journal Papers</Link></li>
+              <li><Link to="/Conferencepublications" className="block px-2 py-2 hover:bg-gray-200">Conference Papers</Link></li>
+              <li><Link to="/Bookchapters" className="block px-2 py-2 hover:bg-gray-200">Book Chapters</Link></li>
+            </ul>
+          </li>
             <li><Link to="/acm" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>ACM ACTIVITY</Link></li>
             <li><Link to="/patents" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>PATENTS</Link></li>
             <li><Link to="/sessions" className="block hover:text-gray-400" onClick={() => setIsOpen(false)}>SESSIONS</Link></li>
