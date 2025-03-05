@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Pictlogo from "../assets/pictlogo.jpg";
 import bg from "../assets/bg.jpg";
-import { FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
-
+console.log("Patents component loaded");
 const Patents = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -24,7 +23,6 @@ const Patents = () => {
           <li><Link to="/patents" className="hover:text-gray-400">PATENTS</Link></li>
           <li><Link to="/sessions" className="hover:text-gray-400">SESSIONS</Link></li>
         </ul>
-
 
         {/* Mobile Menu Button */}
         <button onClick={() => setIsOpen(!isOpen)} className="block md:hidden text-3xl">
@@ -49,7 +47,22 @@ const Patents = () => {
           </ul>
         </div>
       )}
+      
+
+      {/* Patent Information */}
+      <div className="w-5/6 mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg h-4/6 overflow-y-auto">
+        <h2 className="text-2xl font-bold mb-4">PATENTS AND COPYRIGHT</h2>
+        <ul className="list-disc pl-5 space-y-3 text-lg">
+          <li>Granted Patent on "System and Method for Motion Analysis and Feedback for Amendment of Human Action." (Patent No.: 201621029482, Registered on: 30/08/2016)</li>
+          <li>Granted Patent "System and method for automated evaluation of multimodal content." (Patent No.: 202221060608, Registered on: 11/11/2022 Granted)</li>
+          <li>Granted Patent on "System and method for analysis of human movement and suggestions of amendment if any." (Patent No.: 2023/05683)</li>
+          <li>"Personalized physical activity recommendations system using federated learning (FL) and a method." (Patent No.: 202321029305, Published on: 15/09/2023)</li>
+          <li>"Hydroponic Nutrient Prediction Device using IoT." (Patent No.: 202321039419, Published on: 18/08/2023)</li>
+        </ul>
+      </div>
+      
     </div>
   );
 };
+
 export default Patents;
