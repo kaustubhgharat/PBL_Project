@@ -5,7 +5,6 @@ import bg from "../assets/bg.jpg";
 import {  FaBars, FaTimes,FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 const publications = [
   {
     title: "Research Methodology: A Practical and Scientific Approach.",
@@ -16,7 +15,7 @@ const publications = [
   },
   {
     title:
-      "Artificial Intelligence for Internet of Things: Design Principle,                       Modernization, and Techniques.",
+      "Artificial Intelligence for Internet of Things: Design Principle,Modernization, and Techniques.",
     authors: "Geetanjali V. Kale, Kalyani Waghmare",
     chapter:
       "Title of the chapter: Heterogeneous data management in IoT-based health care systems",

@@ -6,9 +6,6 @@ import Bookchapters from "./components/Bookchapters";
 import Conferencepublications from "./components/Conferencepublications";
 import Acm from "./components/Acm";
 import Patents from "./components/Patents";
-import Publication from "./components/Publication";
-import Acm from "./components/Acm";
-import Patents from "./components/Patents";
 import Sessions from "./components/Session";
 import Contact from "./components/Contact";
 import '@fontsource/montserrat'; // Defaults to 400 weight
