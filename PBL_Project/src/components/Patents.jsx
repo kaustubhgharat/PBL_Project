@@ -51,7 +51,7 @@ const Patents = () => {
 
       {/* Patent Information */}
       <div className="w-5/6 mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg h-4/6 overflow-y-auto">
-        <h2 className="text-2xl font-bold mb-4">Granted & Published Patents</h2>
+        <h2 className="text-2xl font-bold mb-4">PATENTS AND COPYRIGHT</h2>
         <ul className="list-disc pl-5 space-y-3 text-lg">
           <li>Granted Patent on "System and Method for Motion Analysis and Feedback for Amendment of Human Action." (Patent No.: 201621029482, Registered on: 30/08/2016)</li>
           <li>Granted Patent "System and method for automated evaluation of multimodal content." (Patent No.: 202221060608, Registered on: 11/11/2022 Granted)</li>

@@ -50,7 +50,7 @@ const Session = () => {
       )}
       {/* Session Information */}
       <div className="w-5/6 mx-auto mt-8 bg-white p-6 rounded-lg shadow-lg h-4/6 overflow-y-auto">
-        <h2 className="text-2xl font-bold mb-4">Sessions & Expert Talks</h2>
+        <h2 className="text-2xl font-bold mb-4">INVITED TALKS / SESSIONS</h2>
         <ul className="list-disc pl-5 space-y-2 text-lg">
           <li>Worked as TPC Chair and Organizing Chair for ICEI-2022 International Conference</li>
           <li>Worked as Organizing Co-chair for CTiS 2022, CTiS 2023, and CTiS 2024</li>
