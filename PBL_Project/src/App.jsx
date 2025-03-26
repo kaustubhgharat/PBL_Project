@@ -4,6 +4,7 @@ import Home from "./Home"
 import About from "./components/About";
 import Bookchapters from "./components/Bookchapters";
 import Conferencepublications from "./components/Conferencepublications";
+import ReasearchPublication from "./components/ReasearchPublication";
 import Acm from "./components/Acm";
 import Patents from "./components/Patents";
 import Sessions from "./components/Session";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/Bookchapters" element={<Bookchapters />} />
         <Route path="/Conferencepublications" element={<Conferencepublications />} />
+        <Route path="/ReasearchPublications" element= {<ReasearchPublication />} />
         <Route path="/acm" element={<Acm />} />
         <Route path="/patents" element={<Patents />} />
         <Route path="/sessions" element={<Sessions />} />
