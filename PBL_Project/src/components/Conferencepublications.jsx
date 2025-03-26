@@ -79,4 +79,4 @@ const Conferencepublications = () => {
     </div>
   );
 };
-export default Conferencepublications ;
+export default Conferencepublications;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Pictlogo from "../assets/pictlogo.jpg";
 import bg from "../assets/bg.jpg";
-import { FaBars, FaTimes,FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkedAlt } from "react-icons/fa";
+import { FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkedAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" h-svh text-black" style={{ backgroundImage: `url(${bg})` }}id="contact">
+    <div className=" h-svh text-black" style={{ backgroundImage: `url(${bg})` }} id="contact">
       {/* Navbar */}
                   <nav className="w-5/6 mx-auto flex justify-between items-center py-4 relative">
                     {/* Logo */}
@@ -145,13 +145,13 @@ const Contact = () => {
                 />
               </div>
               <div className="flex justify-center bottom-3 items-center">
-  <button
-    type="submit"
-    className="bg-gradient-to-r from-green-600 to-blue-600 text-white transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full"
-  >
-    Send
-  </button>
-</div>
+                <button
+                  type="submit"
+                  className="bg-gradient-to-r from-green-600 to-blue-600 text-white transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full"
+                >
+                  Send
+                </button>
+              </div>
 
               {status && <p className="text-center mt-4 text-red-600">{status}</p>}
             </form>

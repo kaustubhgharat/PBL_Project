@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Pictlogo from "../assets/pictlogo.jpg";
 import bg from "../assets/bg.jpg";
-import {  FaBars, FaTimes,FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaBars, FaTimes, FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 const publications = [
@@ -10,7 +10,7 @@ const publications = [
     title: "Research Methodology: A Practical and Scientific Approach.",
     authors: "Geetanjali V. Kale and J. Jayanath",
     chapter: "Title of the chapter: Introduction to research (Chapter No. 1 )",
-    links: { pdf: "#"},
+    links: { pdf: "#" },
     bgColor: "bg-white-100",
   },
   {
@@ -19,7 +19,7 @@ const publications = [
     authors: "Geetanjali V. Kale, Kalyani Waghmare",
     chapter:
       "Title of the chapter: Heterogeneous data management in IoT-based health care systems",
-    links: { pdf: "#"},
+    links: { pdf: "#" },
     bgColor: "bg-white-100",
   },
   {
@@ -28,7 +28,7 @@ const publications = [
     authors: "Geetanjali V. Kale, Priyanka Chaudhari",
     chapter:
       "XAI in human motion recognition and analysis for envisioning society: A systematic review",
-    links: {pdf: "#"},
+    links: { pdf: "#" },
     bgColor: "bg-white-100",
   },
 ];

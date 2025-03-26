@@ -74,7 +74,7 @@ const Patents = () => {
           <li>"Hydroponic Nutrient Prediction Device using IoT." (Patent No.: 202321039419, Published on: 18/08/2023)</li>
         </ul>
       </div>
-      
+
     </div>
   );
 };
